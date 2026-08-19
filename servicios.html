@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Servicios y precios | Peluquerías Élite</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <meta
-    name="description"
-    content="Consulta los servicios y precios de Peluquerías Élite en Palencia."
-  >
+    <title>Servicios | Peluquerías Élite</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="css/styles.css">
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
 
 </head>
 
@@ -28,437 +23,459 @@
 
 <header class="site-header">
 
-  <div class="container nav-container">
-
     <a href="index.html" class="logo">
-      <span class="logo-mark">E</span>
-
-      <span>
-        <strong>PELUQUERÍAS</strong>
-        <em>ÉLITE</em>
-      </span>
+        <span>ÉLITE</span>
+        <small>PELUQUERÍAS</small>
     </a>
 
-    <button class="menu-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button
+        class="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+    >
+        ☰
     </button>
 
-    <nav class="main-navigation">
+    <nav class="main-nav">
 
-      <a href="index.html">Inicio</a>
-      <a class="active" href="servicios.html">Servicios</a>
-      <a href="galeria.html">Galería</a>
-      <a href="reservas.html">Reservar</a>
-      <a href="contacto.html">Contacto</a>
+        <a href="index.html">
+            Inicio
+        </a>
 
-      <a class="nav-cta" href="reservas.html">
-        Reservar cita
-      </a>
+        <a
+            href="servicios.html"
+            class="active"
+        >
+            Servicios
+        </a>
+
+        <a href="galeria.html">
+            Galería
+        </a>
+
+        <a href="marcas.html">
+            Marcas
+        </a>
+
+        <a href="opiniones.html">
+            Opiniones
+        </a>
+
+        <a href="contacto.html">
+            Contacto
+        </a>
+
+        <a
+            href="reservas.html"
+            class="nav-button"
+        >
+            Reservar cita
+        </a>
 
     </nav>
-
-  </div>
 
 </header>
 
 
 <main>
 
-  <section class="page-hero">
+<section class="page-hero">
 
-    <div class="container">
+    <span class="eyebrow">
+        PELUQUERÍAS ÉLITE
+    </span>
 
-      <span class="eyebrow">SERVICIOS & PRECIOS</span>
+    <h1>
+        Servicios
+        <span>y precios.</span>
+    </h1>
 
-      <h1>
-        Todo lo que necesitas.
-        <span>En un solo lugar.</span>
-      </h1>
+    <p>
+        Encuentra el servicio perfecto para ti.
+    </p>
 
-      <p>
-        Precios orientativos de nuestra demo. Los servicios finales
-        pueden variar según longitud, técnica y cantidad de producto.
-      </p>
+</section>
+
+
+<section class="section">
+
+    <div
+        class="service-filters"
+        role="tablist"
+    >
+
+        <button
+            class="filter-btn active"
+            data-filter="todos"
+        >
+            Todos
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="mujer"
+        >
+            Mujer
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="hombre"
+        >
+            Hombre
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="barberia"
+        >
+            Barbería
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="ninos"
+        >
+            Niños
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="color"
+        >
+            Color
+        </button>
 
     </div>
 
-  </section>
+
+    <div class="services-grid">
 
 
-  <section class="section price-section">
+        <article
+            class="service-card"
+            data-category="mujer"
+        >
 
-    <div class="container">
+            <span class="service-tag">
+                MUJER
+            </span>
 
-      <div class="price-tabs">
+            <h2>
+                Corte mujer
+            </h2>
 
-        <button class="price-tab active" data-target="mujer">
-          Mujer
-        </button>
-
-        <button class="price-tab" data-target="hombre">
-          Hombre
-        </button>
-
-        <button class="price-tab" data-target="barba">
-          Barba
-        </button>
-
-        <button class="price-tab" data-target="ninos">
-          Niños
-        </button>
-
-        <button class="price-tab" data-target="color">
-          Color
-        </button>
-
-      </div>
-
-
-      <div class="price-panel active" id="mujer">
-
-        <div class="price-heading">
-
-          <span>01</span>
-
-          <div>
-            <h2>Corte mujer</h2>
             <p>
-              Diagnóstico, lavado, corte y acabado.
+                Lavado, corte personalizado y acabado.
             </p>
-          </div>
 
-        </div>
+            <strong>
+                28 €
+            </strong>
 
+            <a href="reservas.html?servicio=corte-mujer">
+                Reservar →
+            </a>
 
-        <div class="price-list">
-
-          <div class="price-row">
-            <div>
-              <h3>Corte + lavado + secado</h3>
-              <p>45 — 60 min</p>
-            </div>
-            <strong>24 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte + styling</h3>
-              <p>60 min</p>
-            </div>
-            <strong>29 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Peinado / brushing</h3>
-              <p>30 — 45 min</p>
-            </div>
-            <strong>18 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Recogido</h3>
-              <p>Consultar según diseño</p>
-            </div>
-            <strong>Desde 35 €</strong>
-          </div>
-
-        </div>
-
-      </div>
+        </article>
 
 
-      <div class="price-panel" id="hombre">
+        <article
+            class="service-card"
+            data-category="mujer"
+        >
 
-        <div class="price-heading">
+            <span class="service-tag">
+                MUJER
+            </span>
 
-          <span>02</span>
+            <h2>
+                Corte + brushing
+            </h2>
 
-          <div>
-            <h2>Hombre</h2>
             <p>
-              Barbería moderna y cortes personalizados.
+                Corte y brushing profesional.
             </p>
-          </div>
 
-        </div>
+            <strong>
+                35 €
+            </strong>
 
-        <div class="price-list">
+            <a href="reservas.html?servicio=brushing">
+                Reservar →
+            </a>
 
-          <div class="price-row">
-            <div>
-              <h3>Corte clásico</h3>
-              <p>30 min</p>
-            </div>
-            <strong>17 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte degradado / fade</h3>
-              <p>35 — 45 min</p>
-            </div>
-            <strong>19 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte + lavado + styling</h3>
-              <p>40 min</p>
-            </div>
-            <strong>21 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Rapado a máquina</h3>
-              <p>20 min</p>
-            </div>
-            <strong>12 €</strong>
-          </div>
-
-        </div>
-
-      </div>
+        </article>
 
 
-      <div class="price-panel" id="barba">
+        <article
+            class="service-card"
+            data-category="hombre"
+        >
 
-        <div class="price-heading">
+            <span class="service-tag">
+                HOMBRE
+            </span>
 
-          <span>03</span>
+            <h2>
+                Corte hombre
+            </h2>
 
-          <div>
-            <h2>Barbería & barba</h2>
             <p>
-              Perfilado, cuidado y afeitado tradicional.
+                Corte personalizado y acabado.
             </p>
-          </div>
 
-        </div>
+            <strong>
+                18 €
+            </strong>
 
-        <div class="price-list">
+            <a href="reservas.html?servicio=corte-hombre">
+                Reservar →
+            </a>
 
-          <div class="price-row">
-            <div>
-              <h3>Arreglo de barba</h3>
-              <p>20 min</p>
-            </div>
-            <strong>12 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Perfilado de barba</h3>
-              <p>20 min</p>
-            </div>
-            <strong>14 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Afeitado clásico</h3>
-              <p>30 min</p>
-            </div>
-            <strong>17 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte + barba</h3>
-              <p>50 — 60 min</p>
-            </div>
-            <strong>29 €</strong>
-          </div>
-
-        </div>
-
-      </div>
+        </article>
 
 
-      <div class="price-panel" id="ninos">
+        <article
+            class="service-card"
+            data-category="hombre"
+        >
 
-        <div class="price-heading">
+            <span class="service-tag">
+                HOMBRE
+            </span>
 
-          <span>04</span>
+            <h2>
+                Degradado
+            </h2>
 
-          <div>
-            <h2>Niños</h2>
             <p>
-              Cortes pensados para los más pequeños.
+                Degradado personalizado.
             </p>
-          </div>
 
-        </div>
+            <strong>
+                22 €
+            </strong>
 
-        <div class="price-list">
+            <a href="reservas.html?servicio=degradado">
+                Reservar →
+            </a>
 
-          <div class="price-row">
-            <div>
-              <h3>Corte infantil</h3>
-              <p>Hasta 12 años</p>
-            </div>
-            <strong>14 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte niño degradado</h3>
-              <p>30 — 40 min</p>
-            </div>
-            <strong>16 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Corte bebé</h3>
-              <p>Primera experiencia</p>
-            </div>
-            <strong>15 €</strong>
-          </div>
-
-        </div>
-
-      </div>
+        </article>
 
 
-      <div class="price-panel" id="color">
+        <article
+            class="service-card"
+            data-category="barberia"
+        >
 
-        <div class="price-heading">
+            <span class="service-tag">
+                BARBERÍA
+            </span>
 
-          <span>05</span>
+            <h2>
+                Corte + barba
+            </h2>
 
-          <div>
-            <h2>Color & tratamientos</h2>
             <p>
-              Técnicas personalizadas según diagnóstico.
+                Corte y arreglo completo de barba.
             </p>
-          </div>
 
-        </div>
+            <strong>
+                30 €
+            </strong>
 
-        <div class="price-list">
+            <a href="reservas.html?servicio=corte-barba">
+                Reservar →
+            </a>
 
-          <div class="price-row">
-            <div>
-              <h3>Coloración</h3>
-              <p>Desde</p>
-            </div>
-            <strong>32 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Baño de color</h3>
-              <p>Desde</p>
-            </div>
-            <strong>27 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Mechas / balayage</h3>
-              <p>Según longitud y técnica</p>
-            </div>
-            <strong>Desde 45 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Tratamiento hidratante</h3>
-              <p>30 min</p>
-            </div>
-            <strong>15 €</strong>
-          </div>
-
-          <div class="price-row">
-            <div>
-              <h3>Tratamiento reparación profunda</h3>
-              <p>Según diagnóstico</p>
-            </div>
-            <strong>Desde 22 €</strong>
-          </div>
-
-        </div>
-
-      </div>
+        </article>
 
 
-      <div class="price-note">
+        <article
+            class="service-card"
+            data-category="barberia"
+        >
 
-        <strong>¿No sabes qué elegir?</strong>
+            <span class="service-tag">
+                BARBERÍA
+            </span>
 
-        <p>
-          Reserva una consulta y te asesoraremos sobre el servicio
-          más adecuado para tu cabello y estilo.
-        </p>
+            <h2>
+                Arreglo de barba
+            </h2>
 
-        <a href="reservas.html" class="text-link">
-          Reservar consulta →
-        </a>
+            <p>
+                Perfilado y acabado profesional.
+            </p>
 
-      </div>
+            <strong>
+                15 €
+            </strong>
+
+            <a href="reservas.html?servicio=barba">
+                Reservar →
+            </a>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            data-category="ninos"
+        >
+
+            <span class="service-tag">
+                NIÑOS
+            </span>
+
+            <h2>
+                Corte infantil
+            </h2>
+
+            <p>
+                Corte para niños hasta 12 años.
+            </p>
+
+            <strong>
+                15 €
+            </strong>
+
+            <a href="reservas.html?servicio=ninos">
+                Reservar →
+            </a>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            data-category="ninos"
+        >
+
+            <span class="service-tag">
+                NIÑOS
+            </span>
+
+            <h2>
+                Degradado infantil
+            </h2>
+
+            <p>
+                Degradado adaptado a los más jóvenes.
+            </p>
+
+            <strong>
+                18 €
+            </strong>
+
+            <a href="reservas.html?servicio=degradado-nino">
+                Reservar →
+            </a>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            data-category="color"
+        >
+
+            <span class="service-tag">
+                COLOR
+            </span>
+
+            <h2>
+                Coloración
+            </h2>
+
+            <p>
+                Color personalizado y asesoramiento.
+            </p>
+
+            <strong>
+                Desde 40 €
+            </strong>
+
+            <a href="reservas.html?servicio=color">
+                Reservar →
+            </a>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            data-category="color"
+        >
+
+            <span class="service-tag">
+                COLOR
+            </span>
+
+            <h2>
+                Mechas
+            </h2>
+
+            <p>
+                Técnicas de iluminación personalizadas.
+            </p>
+
+            <strong>
+                Desde 55 €
+            </strong>
+
+            <a href="reservas.html?servicio=mechas">
+                Reservar →
+            </a>
+
+        </article>
 
     </div>
 
-  </section>
+</section>
+
+
+<section class="cta">
+
+    <div>
+
+        <span class="eyebrow">
+            ¿YA SABES QUÉ QUIERES?
+        </span>
+
+        <h2>
+            Reserva tu cita.
+        </h2>
+
+    </div>
+
+    <a
+        href="reservas.html"
+        class="btn btn-primary"
+    >
+        Reservar ahora
+    </a>
+
+</section>
 
 </main>
 
 
 <footer class="site-footer">
 
-  <div class="container footer-main">
+    <div class="footer-bottom">
 
-    <div class="footer-brand">
+        <a href="index.html">
+            ← Volver al inicio
+        </a>
 
-      <a href="index.html" class="logo">
-        <span class="logo-mark">E</span>
         <span>
-          <strong>PELUQUERÍAS</strong>
-          <em>ÉLITE</em>
+            © <span data-current-year></span>
+            Peluquerías Élite
         </span>
-      </a>
-
-      <p>
-        Peluquería y barbería contemporánea en Palencia.
-      </p>
 
     </div>
-
-    <div class="footer-column">
-
-      <h3>Navegación</h3>
-
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="galeria.html">Galería</a>
-      <a href="reservas.html">Reservar</a>
-      <a href="contacto.html">Contacto</a>
-
-    </div>
-
-    <div class="footer-column">
-
-      <h3>Contacto</h3>
-
-      <a href="tel:+34979000000">979 000 000</a>
-      <a href="mailto:hola@peluqueriaselite.es">
-        hola@peluqueriaselite.es
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="container footer-bottom">
-
-    <span>© 2026 Peluquerías Élite · Demo ficticia</span>
-
-  </div>
 
 </footer>
 
